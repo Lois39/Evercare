@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Boxicons - Icons | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-icons.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#007bff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="7" cy="7" r="5"></circle>
+                <circle cx="17" cy="7" r="5"></circle>
+                <circle cx="7" cy="17" r="5"></circle>
+                <circle cx="17" cy="17" r="5"></circle>
+                <line x1="12" y1="12" x2="12" y2="24"></line>
+              </svg>
+              
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">EverCare</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            <!-- Patients -->
+            <li class="menu-item active open">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Patients">Patients</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item active">
+                  <a href="patients-list.html" class="menu-link">
+                    <div data-i18n="List">Patient List</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="add-patient.html" class="menu-link">
+                    <div data-i18n="Add">Add Patient</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Appointments -->
+            <li class="menu-item">
+              <a href="appointments.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div data-i18n="Appointments">Appointments</div>
+              </a>
+            </li>
+
+            <!-- Reports -->
+            <li class="menu-item">
+              <a href="reports.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Reports">Reports</div>
+              </a>
+            </li>
+
+            <!-- Settings -->
+            <li class="menu-item">
+              <a href="settings.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Settings">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+          <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar"
+        >
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <!-- Search -->
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item d-flex align-items-center">
+                <i class="bx bx-search fs-4 lh-0"></i>
+                <input
+                  type="text"
+                  class="form-control border-0 shadow-none"
+                  placeholder="Search patients..."
+                  aria-label="Search..."
+                />
+              </div>
+            </div>
+            <!-- /Search -->
+          
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <!-- Notifications -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <i class="bx bx-bell fs-4"></i>
+                  <span class="badge bg-danger badge-dot position-absolute top-0 end-0"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <i class="bx bx-calendar-check text-primary"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">New Appointment</h6>
+                          <small class="text-muted">10 mins ago</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <i class="bx bx-message-dots text-success"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">New Message</h6>
+                          <small class="text-muted">15 mins ago</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <i class="bx bx-error-circle text-danger"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">System Alert</h6>
+                          <small class="text-muted">1 hour ago</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-center" href="javascript:void(0);">View All Notifications</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- /Notifications -->
+          
+              <!-- Messages -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <i class="bx bx-message-dots fs-4"></i>
+                  <span class="badge bg-success badge-dot position-absolute top-0 end-0"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <img src="../assets/img/avatars/patient1.png" alt="Patient" class="rounded-circle w-px-40 h-auto" />
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">John Doe</h6>
+                          <small class="text-muted">Hi, I have a question about my prescription.</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <img src="../assets/img/avatars/patient2.png" alt="Patient" class="rounded-circle w-px-40 h-auto" />
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">Jane Smith</h6>
+                          <small class="text-muted">Can you confirm my appointment time?</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-center" href="javascript:void(0);">View All Messages</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- /Messages -->
+          
+              <!-- User -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar-online">
+                    <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar avatar-online">
+                            <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-semibold d-block">Dr. John Doe</span>
+                          <small class="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-user me-2"></i>
+                      <span class="align-middle">My Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-cog me-2"></i>
+                      <span class="align-middle">Settings</span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="auth-login-basic.html">
+                      <i class="bx bx-power-off me-2"></i>
+                      <span class="align-middle">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ User -->
+            </ul>
+          </div>
+        </nav>
+
+          <!-- / Navbar -->
+
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <!-- Cards Section -->
+            <div class="row">
+              <!-- Card 1: Total Patients -->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                      <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                        <div class="card-title">
+                          <h5 class="text-nowrap mb-2">Total Patients</h5>
+                          <span class="badge bg-label-primary rounded-pill">Current Year</span>
+                        </div>
+                        <div class="mt-sm-auto">
+                          <small class="text-success text-nowrap fw-semibold">
+                            <i class="bx bx-chevron-up"></i> 12.5%
+                          </small>
+                          <h3 class="mb-0">1,245</h3>
+                        </div>
+                      </div>
+                      <div id="totalPatientsChart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Card 1 -->
+          
+              <!-- Card 2: Active Patients -->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                      <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                        <div class="card-title">
+                          <h5 class="text-nowrap mb-2">Active Patients</h5>
+                          <span class="badge bg-label-success rounded-pill">This Month</span>
+                        </div>
+                        <div class="mt-sm-auto">
+                          <small class="text-success text-nowrap fw-semibold">
+                            <i class="bx bx-chevron-up"></i> 8.2%
+                          </small>
+                          <h3 class="mb-0">850</h3>
+                        </div>
+                      </div>
+                      <div id="activePatientsChart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Card 2 -->
+          
+              <!-- Card 3: New Patients -->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                      <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                        <div class="card-title">
+                          <h5 class="text-nowrap mb-2">New Patients</h5>
+                          <span class="badge bg-label-warning rounded-pill">Last 30 Days</span>
+                        </div>
+                        <div class="mt-sm-auto">
+                          <small class="text-success text-nowrap fw-semibold">
+                            <i class="bx bx-chevron-up"></i> 15.3%
+                          </small>
+                          <h3 class="mb-0">120</h3>
+                        </div>
+                      </div>
+                      <div id="newPatientsChart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Card 3 -->
+            </div>
+            <!-- /Cards Section -->
+          
+            <!-- Add Patient Button -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <a href="add-patient.html" class="btn btn-primary">
+                  <i class="bx bx-plus me-2"></i>
+                  Add Patient
+                </a>                
+              </div>
+            </div>
+            <!-- /Add Patient Button -->
+          
+            <!-- Modal for Patient Details -->
+            <div class="modal fade" id="patientModal" tabindex="-1" aria-labelledby="patientModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="patientModalLabel">Patient Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Patient Information Section -->
+                    <div class="table-responsive mb-4">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th>Patient Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img id="modalPatientAvatar" src="" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0" id="modalPatientName">John Doe</h6>
+                                  <small class="text-muted" id="modalPatientEmail">johndoe@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td id="modalPatientEmailText">johndoe@example.com</td>
+                            <td id="modalPatientPhone">+1 (555) 123-4567</td>
+                            <td>
+                              <span class="badge bg-label-success" id="modalPatientStatus">Active</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+            
+                    <!-- Hospital & Report Details -->
+                    <h6 class="mb-3">Hospital Information</h6>
+                    <p><strong>Hospital Name:</strong> <span id="modalHospitalName">City Care Hospital</span></p>
+                    <p><strong>Doctor Assigned:</strong> <span id="modalDoctorName">Dr. Amanda Green</span></p>
+            
+                    <h6 class="mt-4 mb-3">Patient Report</h6>
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Diagnosis</th>
+                            <th>Treatment</th>
+                            <th>Remarks</th>
+                          </tr>
+                        </thead>
+                        <tbody id="modalPatientReport">
+                          <tr>
+                            <td>2025-03-10</td>
+                            <td>Flu</td>
+                            <td>Antibiotics</td>
+                            <td>Rest and hydration recommended</td>
+                          </tr>
+                          <tr>
+                            <td>2025-02-15</td>
+                            <td>Minor fracture</td>
+                            <td>Physiotherapy</td>
+                            <td>Regular check-ups advised</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>            
+<!-- /Modal for Patient Details -->
+
+<!-- Patient List Table -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title m-0 me-2">Patient List</h5>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th>Patient Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Patient 1 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar avatar-sm me-3">
+                      <img src="../assets/img/avatars/patient1.png" alt="Patient" class="rounded-circle" />
+                    </div>
+                    <div>
+                      <h6 class="mb-0">John Doe</h6>
+                      <small class="text-muted">johndoe@example.com</small>
+                    </div>
+                  </div>
+                </td>
+                <td>johndoe@example.com</td>
+                <td>+1 (555) 123-4567</td>
+                <td><span class="badge bg-label-success">Active</span></td>
+                <td>
+                  <button
+                    class="btn btn-sm btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#patientModal"
+                    onclick="openPatientModal(
+                      '../assets/img/avatars/patient1.png',
+                      'John Doe',
+                      'johndoe@example.com',
+                      '+1 (555) 123-4567',
+                      'Active',
+                      'bg-label-success'
+                    )"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <!-- Patient 2 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar avatar-sm me-3">
+                      <img src="../assets/img/avatars/patient2.png" alt="Patient" class="rounded-circle" />
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Jane Smith</h6>
+                      <small class="text-muted">janesmith@example.com</small>
+                    </div>
+                  </div>
+                </td>
+                <td>janesmith@example.com</td>
+                <td>+1 (555) 987-6543</td>
+                <td><span class="badge bg-label-warning">Pending</span></td>
+                <td>
+                  <button
+                    class="btn btn-sm btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#patientModal"
+                    onclick="openPatientModal(
+                      '../assets/img/avatars/patient2.png',
+                      'Jane Smith',
+                      'janesmith@example.com',
+                      '+1 (555) 987-6543',
+                      'Pending',
+                      'bg-label-warning'
+                    )"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <!-- Patient 3 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar avatar-sm me-3">
+                      <img src="../assets/img/avatars/patient3.png" alt="Patient" class="rounded-circle" />
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Michael Johnson</h6>
+                      <small class="text-muted">michael@example.com</small>
+                    </div>
+                  </div>
+                </td>
+                <td>michael@example.com</td>
+                <td>+1 (555) 456-7890</td>
+                <td><span class="badge bg-label-danger">Inactive</span></td>
+                <td>
+                  <button
+                    class="btn btn-sm btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#patientModal"
+                    onclick="openPatientModal(
+                      '../assets/img/avatars/patient3.png',
+                      'Michael Johnson',
+                      'michael@example.com',
+                      '+1 (555) 456-7890',
+                      'Inactive',
+                      'bg-label-danger'
+                    )"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+             <!-- Patient 4 -->
+<tr>
+  <td>
+    <div class="d-flex align-items-center">
+      <div class="avatar avatar-sm me-3">
+        <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+      </div>
+      <div>
+        <h6 class="mb-0">Sarah Brown</h6>
+        <small class="text-muted">sarah@example.com</small>
+      </div>
+    </div>
+  </td>
+  <td>sarah@example.com</td>
+  <td>+1 (555) 321-6547</td>
+  <td><span class="badge bg-label-success">Active</span></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#patientModal"
+      onclick="openPatientModal(
+        '../assets/img/avatars/patient4.png',
+        'Sarah Brown',
+        'sarah@example.com',
+        '+1 (555) 321-6547',
+        'Active',
+        'bg-label-success'
+      )">
+      View
+    </button>
+  </td>
+</tr>
+
+<!-- Patient 5 -->
+<tr>
+  <td>
+    <div class="d-flex align-items-center">
+      <div class="avatar avatar-sm me-3">
+        <img src="../assets/img/avatars/patient5.png" alt="Patient" class="rounded-circle" />
+      </div>
+      <div>
+        <h6 class="mb-0">Emily Davis</h6>
+        <small class="text-muted">emily@example.com</small>
+      </div>
+    </div>
+  </td>
+  <td>emily@example.com</td>
+  <td>+1 (555) 654-3210</td>
+  <td><span class="badge bg-label-success">Active</span></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#patientModal"
+      onclick="openPatientModal(
+        '../assets/img/avatars/patient5.png',
+        'Emily Davis',
+        'emily@example.com',
+        '+1 (555) 654-3210',
+        'Active',
+        'bg-label-success'
+      )">
+      View
+    </button>
+  </td>
+</tr>
+
+<!-- Patient 6 -->
+<tr>
+  <td>
+    <div class="d-flex align-items-center">
+      <div class="avatar avatar-sm me-3">
+        <img src="../assets/img/avatars/patient6.png" alt="Patient" class="rounded-circle" />
+      </div>
+      <div>
+        <h6 class="mb-0">David Wilson</h6>
+        <small class="text-muted">david@example.com</small>
+      </div>
+    </div>
+  </td>
+  <td>david@example.com</td>
+  <td>+1 (555) 789-0123</td>
+  <td><span class="badge bg-label-warning">Pending</span></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#patientModal"
+      onclick="openPatientModal(
+        '../assets/img/avatars/patient6.png',
+        'David Wilson',
+        'david@example.com',
+        '+1 (555) 789-0123',
+        'Pending',
+        'bg-label-warning'
+      )">
+      View
+    </button>
+  </td>
+</tr>
+
+<!-- Patient 7 -->
+<tr>
+  <td>
+    <div class="d-flex align-items-center">
+      <div class="avatar avatar-sm me-3">
+        <img src="../assets/img/avatars/patient7.png" alt="Patient" class="rounded-circle" />
+      </div>
+      <div>
+        <h6 class="mb-0">Olivia Martinez</h6>
+        <small class="text-muted">olivia@example.com</small>
+      </div>
+    </div>
+  </td>
+  <td>olivia@example.com</td>
+  <td>+1 (555) 012-3456</td>
+  <td><span class="badge bg-label-success">Active</span></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#patientModal"
+      onclick="openPatientModal(
+        '../assets/img/avatars/patient7.png',
+        'Olivia Martinez',
+        'olivia@example.com',
+        '+1 (555) 012-3456',
+        'Active',
+        'bg-label-success'
+      )">
+      View
+    </button>
+  </td>
+</tr>
+
+<!-- Patient 8 -->
+<tr>
+  <td>
+    <div class="d-flex align-items-center">
+      <div class="avatar avatar-sm me-3">
+        <img src="../assets/img/avatars/patient8.png" alt="Patient" class="rounded-circle" />
+      </div>
+      <div>
+        <h6 class="mb-0">James Anderson</h6>
+        <small class="text-muted">james@example.com</small>
+      </div>
+    </div>
+  </td>
+  <td>james@example.com</td>
+  <td>+1 (555) 345-6789</td>
+  <td><span class="badge bg-label-danger">Inactive</span></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#patientModal"
+      onclick="openPatientModal(
+        '../assets/img/avatars/patient8.png',
+        'James Anderson',
+        'james@example.com',
+        '+1 (555) 345-6789',
+        'Inactive',
+        'bg-label-danger'
+      )">
+      View
+    </button>
+  </td>
+</tr>
+
+<!-- Patient 9 -->
+<tr>
+  <td>
+    <div class="d-flex align-items-center">
+      <div class="avatar avatar-sm me-3">
+        <img src="../assets/img/avatars/patient9.png" alt="Patient" class="rounded-circle" />
+      </div>
+      <div>
+        <h6 class="mb-0">Sophia Taylor</h6>
+        <small class="text-muted">sophia@example.com</small>
+      </div>
+    </div>
+  </td>
+  <td>sophia@example.com</td>
+  <td>+1 (555) 678-9012</td>
+  <td><span class="badge bg-label-success">Active</span></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#patientModal"
+      onclick="openPatientModal(
+        '../assets/img/avatars/patient9.png',
+        'Sophia Taylor',
+        'sophia@example.com',
+        '+1 (555) 678-9012',
+        'Active',
+        'bg-label-success'
+      )">
+      View
+    </button>
+  </td>
+</tr>
+
+<!-- Patient 10 -->
+<tr>
+  <td>
+    <div class="d-flex align-items-center">
+      <div class="avatar avatar-sm me-3">
+        <img src="../assets/img/avatars/patient10.png" alt="Patient" class="rounded-circle" />
+      </div>
+      <div>
+        <h6 class="mb-0">William Thomas</h6>
+        <small class="text-muted">william@example.com</small>
+      </div>
+    </div>
+  </td>
+  <td>william@example.com</td>
+  <td>+1 (555) 901-2345</td>
+  <td><span class="badge bg-label-warning">Pending</span></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#patientModal"
+      onclick="openPatientModal(
+        '../assets/img/avatars/patient10.png',
+        'William Thomas',
+        'william@example.com',
+        '+1 (555) 901-2345',
+        'Pending',
+        'bg-label-warning'
+      )">
+      View
+    </button>
+  </td>
+</tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center mt-4">
+            <li class="page-item disabled">
+              <a class="page-link" href="javascript:void(0);" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="javascript:void(0);">Next</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /Pagination -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Patient List Table -->
+
+<!-- JavaScript to Handle Modal Data -->
+<script>
+  function openPatientModal(avatar, name, email, phone, status, badgeClass) {
+    // Set the modal content dynamically
+    document.getElementById('modalPatientAvatar').src = avatar;
+    document.getElementById('modalPatientName').innerText = name;
+    document.getElementById('modalPatientEmail').innerText = email;
+    document.getElementById('modalPatientEmailText').innerText = email;
+    document.getElementById('modalPatientPhone').innerText = phone;
+    document.getElementById('modalPatientStatus').innerText = status;
+    document.getElementById('modalPatientStatus').className = `badge ${badgeClass}`;
+  }
+</script>
+          </div>
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>

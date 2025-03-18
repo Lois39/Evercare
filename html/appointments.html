@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Boxicons - Icons | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-icons.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#007bff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="7" cy="7" r="5"></circle>
+                <circle cx="17" cy="7" r="5"></circle>
+                <circle cx="7" cy="17" r="5"></circle>
+                <circle cx="17" cy="17" r="5"></circle>
+                <line x1="12" y1="12" x2="12" y2="24"></line>
+              </svg>              
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">EverCare</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            <!-- Patients -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Patients">Patients</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="patients-list.html" class="menu-link">
+                    <div data-i18n="List">Patient List</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="add-patient.html" class="menu-link">
+                    <div data-i18n="Add">Add Patient</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Appointments -->
+            <li class="menu-item active">
+              <a href="appointments.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div data-i18n="Appointments">Appointments</div>
+              </a>
+            </li>
+
+            <!-- Reports -->
+            <li class="menu-item">
+              <a href="reports.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Reports">Reports</div>
+              </a>
+            </li>
+
+            <!-- Settings -->
+            <li class="menu-item">
+              <a href="settings.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Settings">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+          <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar"
+        >
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <!-- Search -->
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item d-flex align-items-center">
+                <i class="bx bx-search fs-4 lh-0"></i>
+                <input
+                  type="text"
+                  class="form-control border-0 shadow-none"
+                  placeholder="Search patients..."
+                  aria-label="Search..."
+                />
+              </div>
+            </div>
+            <!-- /Search -->
+          
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <!-- Notifications -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <i class="bx bx-bell fs-4"></i>
+                  <span class="badge bg-danger badge-dot position-absolute top-0 end-0"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <i class="bx bx-calendar-check text-primary"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">New Appointment</h6>
+                          <small class="text-muted">10 mins ago</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <i class="bx bx-message-dots text-success"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">New Message</h6>
+                          <small class="text-muted">15 mins ago</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <i class="bx bx-error-circle text-danger"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">System Alert</h6>
+                          <small class="text-muted">1 hour ago</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-center" href="javascript:void(0);">View All Notifications</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- /Notifications -->
+          
+              <!-- Messages -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <i class="bx bx-message-dots fs-4"></i>
+                  <span class="badge bg-success badge-dot position-absolute top-0 end-0"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <img src="../assets/img/avatars/patient1.png" alt="Patient" class="rounded-circle w-px-40 h-auto" />
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">John Doe</h6>
+                          <small class="text-muted">Hi, I have a question about my prescription.</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <img src="../assets/img/avatars/patient2.png" alt="Patient" class="rounded-circle w-px-40 h-auto" />
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="mb-1">Jane Smith</h6>
+                          <small class="text-muted">Can you confirm my appointment time?</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-center" href="javascript:void(0);">View All Messages</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- /Messages -->
+          
+              <!-- User -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar-online">
+                    <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar avatar-online">
+                            <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-semibold d-block">Dr. John Doe</span>
+                          <small class="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-user me-2"></i>
+                      <span class="align-middle">My Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-cog me-2"></i>
+                      <span class="align-middle">Settings</span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="auth-login-basic.html">
+                      <i class="bx bx-power-off me-2"></i>
+                      <span class="align-middle">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ User -->
+            </ul>
+          </div>
+        </nav>
+
+          <!-- / Navbar -->
+
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <!-- Add Appointment Button -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <button class="btn btn-primary">
+                  <i class="bx bx-plus me-2"></i>
+                  Add Appointment
+                </button>
+              </div>
+            </div>
+            <!-- /Add Appointment Button -->
+          
+            <!-- Appointments Table -->
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title m-0 me-2">Appointments</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th>Patient Name</th>
+                            <th>Appointment Date</th>
+                            <th>Appointment Time</th>
+                            <th>Doctor</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Appointment 1 -->
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient3.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Alice Johnson</h6>
+                                  <small class="text-muted">alicejohnson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-27</td>
+                            <td>11:00 AM</td>
+                            <td>Dr. Sarah Lee</td>
+                            <td><span class="badge bg-label-danger">Cancelled</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient3.png',
+                                    'Alice Johnson',
+                                    '2023-10-27',
+                                    '11:00 AM',
+                                    'Dr. Sarah Lee',
+                                    'Cancelled',
+                                    'Eye Examination',
+                                    'Eye Clinic, Room 105',
+                                    'Vision Test',
+                                    'Patient missed the previous appointment, rescheduled to next week.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger" style="display: none;">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- Appointment 2 -->
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Mark Wilson</h6>
+                                  <small class="text-muted">markwilson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-28</td>
+                            <td>09:15 AM</td>
+                            <td>Dr. James Carter</td>
+                            <td><span class="badge bg-label-success">Confirmed</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient4.png',
+                                    'Mark Wilson',
+                                    '2023-10-28',
+                                    '09:15 AM',
+                                    'Dr. James Carter',
+                                    'Confirmed',
+                                    'Skin Consultation',
+                                    'Dermatology, Room 210',
+                                    'Skin Check',
+                                    'Patient has reported new moles that need examination.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Mark Wilson</h6>
+                                  <small class="text-muted">markwilson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-28</td>
+                            <td>09:15 AM</td>
+                            <td>Dr. James Carter</td>
+                            <td><span class="badge bg-label-success">Pending</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient4.png',
+                                    'Mark Wilson',
+                                    '2023-10-28',
+                                    '09:15 AM',
+                                    'Dr. James Carter',
+                                    'Pending',
+                                    'Skin Consultation',
+                                    'Dermatology, Room 210',
+                                    'Skin Check',
+                                    'Patient has reported new moles that need examination.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Mark Wilson</h6>
+                                  <small class="text-muted">markwilson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-28</td>
+                            <td>09:15 AM</td>
+                            <td>Dr. James Carter</td>
+                            <td><span class="badge bg-label-success">Cancelled</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient4.png',
+                                    'Mark Wilson',
+                                    '2023-10-28',
+                                    '09:15 AM',
+                                    'Dr. James Carter',
+                                    'Cancelled',
+                                    'Skin Consultation',
+                                    'Dermatology, Room 210',
+                                    'Skin Check',
+                                    'Patient has reported new moles that need examination.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Mark Wilson</h6>
+                                  <small class="text-muted">markwilson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-28</td>
+                            <td>09:15 AM</td>
+                            <td>Dr. James Carter</td>
+                            <td><span class="badge bg-label-success">Confirmed</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient4.png',
+                                    'Mark Wilson',
+                                    '2023-10-28',
+                                    '09:15 AM',
+                                    'Dr. James Carter',
+                                    'Confirmed',
+                                    'Skin Consultation',
+                                    'Dermatology, Room 210',
+                                    'Skin Check',
+                                    'Patient has reported new moles that need examination.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Mark Wilson</h6>
+                                  <small class="text-muted">markwilson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-28</td>
+                            <td>09:15 AM</td>
+                            <td>Dr. James Carter</td>
+                            <td><span class="badge bg-label-success">Confirmed</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient4.png',
+                                    'Mark Wilson',
+                                    '2023-10-28',
+                                    '09:15 AM',
+                                    'Dr. James Carter',
+                                    'Confirmed',
+                                    'Skin Consultation',
+                                    'Dermatology, Room 210',
+                                    'Skin Check',
+                                    'Patient has reported new moles that need examination.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Mark Wilson</h6>
+                                  <small class="text-muted">markwilson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-28</td>
+                            <td>09:15 AM</td>
+                            <td>Dr. James Carter</td>
+                            <td><span class="badge bg-label-success">Confirmed</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient4.png',
+                                    'Mark Wilson',
+                                    '2023-10-28',
+                                    '09:15 AM',
+                                    'Dr. James Carter',
+                                    'Confirmed',
+                                    'Skin Consultation',
+                                    'Dermatology, Room 210',
+                                    'Skin Check',
+                                    'Patient has reported new moles that need examination.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm me-3">
+                                  <img src="../assets/img/avatars/patient4.png" alt="Patient" class="rounded-circle" />
+                                </div>
+                                <div>
+                                  <h6 class="mb-0">Mark Wilson</h6>
+                                  <small class="text-muted">markwilson@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                            <td>2023-10-28</td>
+                            <td>09:15 AM</td>
+                            <td>Dr. James Carter</td>
+                            <td><span class="badge bg-label-success">Confirmed</span></td>
+                            <td>
+                              <div class="d-flex">
+                                <button
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#appointmentModal"
+                                  onclick="openAppointmentModal(
+                                    '../assets/img/avatars/patient4.png',
+                                    'Mark Wilson',
+                                    '2023-10-28',
+                                    '09:15 AM',
+                                    'Dr. James Carter',
+                                    'Confirmed',
+                                    'Skin Consultation',
+                                    'Dermatology, Room 210',
+                                    'Skin Check',
+                                    'Patient has reported new moles that need examination.'
+                                  )"
+                                >
+                                  View
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  Cancel
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation">
+                      <ul class="pagination justify-content-center mt-4">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="javascript:void(0);" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- /Pagination -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Appointments Table -->
+          
+            <!-- Modal for Appointment Details -->
+            <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Appointment Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Patient Information -->
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="avatar avatar-lg me-3">
+                        <img id="modalAppointmentAvatar" src="" alt="Patient" class="rounded-circle" />
+                      </div>
+                      <div>
+                        <h5 class="mb-0" id="modalAppointmentPatientName">John Doe</h5>
+                        <small class="text-muted" id="modalAppointmentPatientEmail">johndoe@example.com</small>
+                      </div>
+                    </div>
+                    <!-- Appointment Details -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p><strong>Appointment Date:</strong> <span id="modalAppointmentDate">2023-10-25</span></p>
+                        <p><strong>Appointment Time:</strong> <span id="modalAppointmentTime">10:00 AM</span></p>
+                        <p><strong>Doctor:</strong> <span id="modalAppointmentDoctor">Dr. Emily Davis</span></p>
+                        <p><strong>Status:</strong> <span id="modalAppointmentStatus" class="badge bg-label-success">Confirmed</span></p>
+                      </div>
+                      <div class="col-md-6">
+                        <p><strong>Appointment Type:</strong> <span id="modalAppointmentType">General Consultation</span></p>
+                        <p><strong>Location:</strong> <span id="modalAppointmentLocation">Main Hospital, Room 101</span></p>
+                        <p><strong>Reason:</strong> <span id="modalAppointmentReason">Routine Checkup</span></p>
+                        <p><strong>Notes:</strong> <span id="modalAppointmentNotes">Patient requested a follow-up for previous treatment.</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="approveButton" style="display: none;">
+                      <i class="bx bx-check"></i> Approve
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Modal for Appointment Details -->
+          </div>
+          
+          <!-- JavaScript to Handle Modal Data -->
+          <script>
+            function openAppointmentModal(
+              avatar,
+              patientName,
+              date,
+              time,
+              doctor,
+              status,
+              reason,
+              location,
+              type,
+              notes
+            ) {
+              // Set the modal content dynamically
+              document.getElementById('modalAppointmentAvatar').src = avatar;
+              document.getElementById('modalAppointmentPatientName').innerText = patientName;
+              document.getElementById('modalAppointmentPatientEmail').innerText = `${patientName.toLowerCase().replace(' ', '')}@example.com`;
+              document.getElementById('modalAppointmentDate').innerText = date;
+              document.getElementById('modalAppointmentTime').innerText = time;
+              document.getElementById('modalAppointmentDoctor').innerText = doctor;
+              document.getElementById('modalAppointmentStatus').innerText = status;
+              document.getElementById('modalAppointmentStatus').className = `badge ${
+                status === 'Pending' ? 'bg-label-warning' :
+                status === 'Confirmed' ? 'bg-label-success' :
+                'bg-label-danger'
+              }`;
+              document.getElementById('modalAppointmentReason').innerText = reason;
+              document.getElementById('modalAppointmentLocation').innerText = location;
+              document.getElementById('modalAppointmentType').innerText = type;
+              document.getElementById('modalAppointmentNotes').innerText = notes;
+          
+              // Show/hide the Approve button based on status
+              const approveButton = document.getElementById('approveButton');
+              approveButton.style.display = status === 'Pending' ? 'inline-block' : 'none';
+            }
+          </script>       
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
