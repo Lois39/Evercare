@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>My Profile | Evercare Dashboard</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-account-settings.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#007bff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="7" cy="7" r="5"></circle>
+                <circle cx="17" cy="7" r="5"></circle>
+                <circle cx="7" cy="17" r="5"></circle>
+                <circle cx="17" cy="17" r="5"></circle>
+                <line x1="12" y1="12" x2="12" y2="24"></line>
+              </svg>              
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">EverCare</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            <!-- Patients -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Patients">Patients</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="patients-list.html" class="menu-link">
+                    <div data-i18n="List">Patient List</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="add-patient.html" class="menu-link">
+                    <div data-i18n="Add">Add Patient</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Appointments -->
+            <li class="menu-item">
+              <a href="appointments.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div data-i18n="Appointments">Appointments</div>
+              </a>
+            </li>
+
+            <!-- Reports -->
+            <li class="menu-item">
+              <a href="reports.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Reports">Reports</div>
+              </a>
+            </li>
+
+            <!-- Settings -->
+            <li class="menu-item">
+              <a href="settings.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Settings">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Dr. John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="settings.html">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4">
+                <span class="text-muted fw-light">Account /</span> Profile
+              </h4>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-4">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"
+                        ><i class="bx bx-user me-1"></i> Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="notifications.html"
+                        ><i class="bx bx-bell me-1"></i> Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="connections.html"
+                        ><i class="bx bx-link-alt me-1"></i> Connections</a>
+                    </li>
+                  </ul>
+                  
+                  <div class="card mb-4">
+                    <h5 class="card-header">Profile Details</h5>
+                    <!-- Profile Picture -->
+                    <div class="card-body text-center">
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img
+                          src="../assets/img/avatars/doctor.png"
+                          alt="user-avatar"
+                          class="d-block rounded"
+                          height="100"
+                          width="100"
+                          id="profilePicture"
+                        />
+                        <div class="button-wrapper">
+                          <label for="upload" class="btn btn-primary me-2 mb-3" tabindex="0">
+                            <span class="d-none d-sm-block">Upload new photo</span>
+                            <i class="bx bx-upload d-block d-sm-none"></i>
+                            <input
+                              type="file"
+                              id="upload"
+                              class="account-file-input"
+                              hidden
+                              accept="image/png, image/jpeg"
+                            />
+                          </label>
+                          <button type="button" class="btn btn-outline-secondary account-image-reset mb-3">
+                            <i class="bx bx-reset d-block d-sm-none"></i>
+                            <span class="d-none d-sm-block">Reset</span>
+                          </button>
+                          <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="firstName"
+                              name="firstName"
+                              value="John"
+                              autofocus
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              value="john.doe@example.com"
+                              placeholder="john.doe@example.com"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="phone"
+                              name="phone"
+                              value="+1 (555) 123-4567"
+                              placeholder="+1 (555) 123-4567"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="specialization" class="form-label">Specialization</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="specialization"
+                              name="specialization"
+                              value="Cardiology"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="license" class="form-label">Medical License</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="license"
+                              name="license"
+                              value="MD12345678"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="address"
+                              name="address"
+                              value="123 Medical Drive, Suite 100"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="city" class="form-label">City</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="city"
+                              name="city"
+                              value="New York"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="state"
+                              name="state"
+                              value="NY"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="zip" class="form-label">ZIP Code</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="zip"
+                              name="zip"
+                              value="10001"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-12">
+                            <label for="bio" class="form-label">Bio</label>
+                            <textarea
+                              class="form-control"
+                              id="bio"
+                              name="bio"
+                              rows="3"
+                            >Dr. John Doe is a board-certified cardiologist with over 15 years of experience in treating cardiovascular diseases. He specializes in interventional cardiology and preventive care.</textarea>
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">Save changes</button>
+                          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <!-- Change Password -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">Change Password</h5>
+                    <div class="card-body">
+                      <form id="formChangePassword" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-6 form-password-toggle">
+                            <label class="form-label" for="currentPassword">Current Password</label>
+                            <div class="input-group input-group-merge">
+                              <input
+                                class="form-control"
+                                type="password"
+                                id="currentPassword"
+                                name="currentPassword"
+                                placeholder="Enter current password"
+                              />
+                              <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="mb-3 col-md-6 form-password-toggle">
+                            <label class="form-label" for="newPassword">New Password</label>
+                            <div class="input-group input-group-merge">
+                              <input
+                                class="form-control"
+                                type="password"
+                                id="newPassword"
+                                name="newPassword"
+                                placeholder="Enter new password"
+                              />
+                              <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                            </div>
+                          </div>
+                          <div class="mb-3 col-md-6 form-password-toggle">
+                            <label class="form-label" for="confirmPassword">Confirm New Password</label>
+                            <div class="input-group input-group-merge">
+                              <input
+                                class="form-control"
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm new password"
+                              />
+                              <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="alert alert-warning">
+                              <h6 class="alert-heading">Ensure these requirements are met:</h6>
+                              <ul class="mb-0">
+                                <li>Minimum 8 characters long</li>
+                                <li>At least one special character</li>
+                                <li>At least one number</li>
+                                <li>At least one uppercase letter</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">Change Password</button>
+                          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <!-- Two-Factor Authentication -->
+                  <div class="card">
+                    <h5 class="card-header">Two-Factor Authentication</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <h6 class="mb-1">SMS Authentication</h6>
+                        <p class="text-muted mb-3">Use your phone number to receive a verification code</p>
+                        <div class="d-flex justify-content-between border-bottom pb-2 mb-3">
+                          <div>
+                            <span class="fw-semibold">+1 (555) 123-4567</span>
+                            <div class="small text-muted">Primary phone number</div>
+                          </div>
+                          <button class="btn btn-sm btn-label-secondary">Change</button>
+                        </div>
+                        <button class="btn btn-sm btn-primary">Enable SMS Authentication</button>
+                      </div>
+                      <div>
+                        <h6 class="mb-1">Authenticator App</h6>
+                        <p class="text-muted mb-3">Use an authenticator app to get verification codes</p>
+                        <button class="btn btn-sm btn-primary">Set Up Authenticator App</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalEnableOTP" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalEnableOTPTitle">Enable One-Time Password</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col mb-3">
+                        <p>We've sent a verification code to your phone number ending in 4567</p>
+                        <div class="form-group mb-3">
+                          <label for="otpCode" class="form-label">Verification Code</label>
+                          <input type="text" class="form-control" id="otpCode" placeholder="Enter 6-digit code" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary">Verify & Enable</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      // Profile picture upload preview
+      document.addEventListener('DOMContentLoaded', function() {
+        const profilePicInput = document.getElementById('upload');
+        const profilePicElement = document.getElementById('profilePicture');
+        const resetBtn = document.querySelector('.account-image-reset');
+        
+        profilePicInput.addEventListener('change', function(e) {
+          if (e.target.files && e.target.files[0]) {
+            const reader = new FileReader();
+            
+            reader.onload = function(event) {
+              profilePicElement.src = event.target.result;
+            };
+            
+            reader.readAsDataURL(e.target.files[0]);
+          }
+        });
+        
+        resetBtn.addEventListener('click', function() {
+          profilePicElement.src = '../assets/img/avatars/doctor.png';
+          profilePicInput.value = '';
+        });
+        
+        // Form validation for change password
+        const changePasswordForm = document.getElementById('formChangePassword');
+        changePasswordForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const currentPassword = document.getElementById('currentPassword').value;
+          const newPassword = document.getElementById('newPassword').value;
+          const confirmPassword = document.getElementById('confirmPassword').value;
+          
+          // Simple validation
+          if (!currentPassword || !newPassword || !confirmPassword) {
+            alert('Please fill in all password fields');
+            return;
+          }
+          
+          if (newPassword !== confirmPassword) {
+            alert('New passwords do not match');
+            return;
+          }
+          
+          // Password strength validation
+          const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+          if (!passwordRegex.test(newPassword)) {
+            alert('Password must be at least 8 characters long with at least one uppercase letter, one number, and one special character');
+            return;
+          }
+          
+          // Here you would typically make an AJAX call to update the password
+          alert('Password changed successfully!');
+          changePasswordForm.reset();
+        });
+        
+        // Profile form submission
+        const profileForm = document.getElementById('formAccountSettings');
+        profileForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Here you would typically make an AJAX call to update the profile
+          alert('Profile updated successfully!');
+        });
+      });
+    </script>
+  </body>
+</html>

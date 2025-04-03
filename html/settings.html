@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Settings | Evercare Dashboard</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-account-settings.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#007bff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="7" cy="7" r="5"></circle>
+                <circle cx="17" cy="7" r="5"></circle>
+                <circle cx="7" cy="17" r="5"></circle>
+                <circle cx="17" cy="17" r="5"></circle>
+                <line x1="12" y1="12" x2="12" y2="24"></line>
+              </svg>              
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">EverCare</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            <!-- Patients -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Patients">Patients</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="patients-list.html" class="menu-link">
+                    <div data-i18n="List">Patient List</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="add-patient.html" class="menu-link">
+                    <div data-i18n="Add">Add Patient</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Appointments -->
+            <li class="menu-item">
+              <a href="appointments.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div data-i18n="Appointments">Appointments</div>
+              </a>
+            </li>
+
+            <!-- Reports -->
+            <li class="menu-item">
+              <a href="reports.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Reports">Reports</div>
+              </a>
+            </li>
+
+            <!-- Settings -->
+            <li class="menu-item active">
+              <a href="settings.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Settings">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search settings..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Dr. John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="settings.html">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4">
+                <span class="text-muted fw-light">Account Settings /</span> System Settings
+              </h4>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"
+                        ><i class="bx bx-cog me-1"></i> General</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="settings-account.html"
+                        ><i class="bx bx-user me-1"></i> Account</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="settings-security.html"
+                        ><i class="bx bx-lock-alt me-1"></i> Security</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="settings-notifications.html"
+                        ><i class="bx bx-bell me-1"></i> Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="settings-integrations.html"
+                        ><i class="bx bx-link-alt me-1"></i> Integrations</a>
+                    </li>
+                  </ul>
+                  
+                  <div class="card mb-4">
+                    <h5 class="card-header">General Settings</h5>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="mb-3 col-md-6">
+                          <label for="clinicName" class="form-label">Clinic Name</label>
+                          <input
+                            class="form-control"
+                            type="text"
+                            id="clinicName"
+                            name="clinicName"
+                            value="EverCare Medical Center"
+                            placeholder="Enter clinic name"
+                          />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label for="timezone" class="form-label">Timezone</label>
+                          <select id="timezone" class="select2 form-select">
+                            <option value="">Select Timezone</option>
+                            <option value="America/New_York" selected>(UTC-05:00) Eastern Time</option>
+                            <option value="America/Chicago">(UTC-06:00) Central Time</option>
+                            <option value="America/Denver">(UTC-07:00) Mountain Time</option>
+                            <option value="America/Los_Angeles">(UTC-08:00) Pacific Time</option>
+                            <option value="UTC">(UTC) Coordinated Universal Time</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="mb-3 col-md-6">
+                          <label for="dateFormat" class="form-label">Date Format</label>
+                          <select id="dateFormat" class="select2 form-select">
+                            <option value="MM/DD/YYYY" selected>MM/DD/YYYY</option>
+                            <option value="DD/MM/YYYY">DD/MM/YYYY</option>
+                            <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+                            <option value="MMMM D, YYYY">MMMM D, YYYY</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label for="timeFormat" class="form-label">Time Format</label>
+                          <select id="timeFormat" class="select2 form-select">
+                            <option value="h:mm A" selected>12-hour (3:45 PM)</option>
+                            <option value="HH:mm">24-hour (15:45)</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="mb-3 col-md-6">
+                          <label for="defaultLanguage" class="form-label">Default Language</label>
+                          <select id="defaultLanguage" class="select2 form-select">
+                            <option value="en" selected>English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="zh">Chinese</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label for="defaultRecordsPerPage" class="form-label">Records Per Page</label>
+                          <select id="defaultRecordsPerPage" class="select2 form-select">
+                            <option value="10">10</option>
+                            <option value="25" selected>25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="mt-2">
+                        <button type="submit" class="btn btn-primary me-2">Save changes</button>
+                        <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card mb-4">
+                    <h5 class="card-header">Appointment Settings</h5>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="mb-3 col-md-6">
+                          <label for="appointmentDuration" class="form-label">Default Appointment Duration</label>
+                          <select id="appointmentDuration" class="select2 form-select">
+                            <option value="15">15 minutes</option>
+                            <option value="30" selected>30 minutes</option>
+                            <option value="45">45 minutes</option>
+                            <option value="60">60 minutes</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label for="appointmentBuffer" class="form-label">Buffer Time Between Appointments</label>
+                          <select id="appointmentBuffer" class="select2 form-select">
+                            <option value="0">No buffer</option>
+                            <option value="5" selected>5 minutes</option>
+                            <option value="10">10 minutes</option>
+                            <option value="15">15 minutes</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="mb-3 col-md-6">
+                          <label for="startTime" class="form-label">Day Start Time</label>
+                          <input type="text" class="form-control flatpickr-time" id="startTime" value="08:00 AM" />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label for="endTime" class="form-label">Day End Time</label>
+                          <input type="text" class="form-control flatpickr-time" id="endTime" value="05:00 PM" />
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Working Days</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="monday" checked />
+                          <label class="form-check-label" for="monday">Monday</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="tuesday" checked />
+                          <label class="form-check-label" for="tuesday">Tuesday</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="wednesday" checked />
+                          <label class="form-check-label" for="wednesday">Wednesday</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="thursday" checked />
+                          <label class="form-check-label" for="thursday">Thursday</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="friday" checked />
+                          <label class="form-check-label" for="friday">Friday</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="saturday" />
+                          <label class="form-check-label" for="saturday">Saturday</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="sunday" />
+                          <label class="form-check-label" for="sunday">Sunday</label>
+                        </div>
+                      </div>
+                      <div class="mt-2">
+                        <button type="submit" class="btn btn-primary me-2">Save changes</button>
+                        <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card mb-4">
+                    <h5 class="card-header">Notification Settings</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <label class="form-label">Email Notifications</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="newAppointmentEmail" checked />
+                          <label class="form-check-label" for="newAppointmentEmail">New appointment scheduled</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="appointmentCancelEmail" checked />
+                          <label class="form-check-label" for="appointmentCancelEmail">Appointment cancellation</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="patientReminderEmail" checked />
+                          <label class="form-check-label" for="patientReminderEmail">Patient reminders</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="followupEmail" checked />
+                          <label class="form-check-label" for="followupEmail">Follow-up reminders</label>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">SMS Notifications</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="newAppointmentSMS" />
+                          <label class="form-check-label" for="newAppointmentSMS">New appointment scheduled</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="appointmentCancelSMS" />
+                          <label class="form-check-label" for="appointmentCancelSMS">Appointment cancellation</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="patientReminderSMS" checked />
+                          <label class="form-check-label" for="patientReminderSMS">Patient reminders</label>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="reminderTime" class="form-label">Reminder Time Before Appointment</label>
+                        <select id="reminderTime" class="select2 form-select">
+                          <option value="1">1 hour before</option>
+                          <option value="2">2 hours before</option>
+                          <option value="6">6 hours before</option>
+                          <option value="12">12 hours before</option>
+                          <option value="24" selected>1 day before</option>
+                          <option value="48">2 days before</option>
+                          <option value="168">1 week before</option>
+                        </select>
+                      </div>
+                      <div class="mt-2">
+                        <button type="submit" class="btn btn-primary me-2">Save changes</button>
+                        <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <h5 class="card-header">Danger Zone</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#backupModal">
+                          <i class="bx bx-cloud-download me-1"></i> Backup Database
+                        </button>
+                        <p class="mt-2 small text-muted">Create a backup of all system data.</p>
+                      </div>
+                      <div class="mb-3">
+                        <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#resetModal">
+                          <i class="bx bx-reset me-1"></i> Reset All Settings
+                        </button>
+                        <p class="mt-2 small text-muted">Reset all settings to default values.</p>
+                      </div>
+                      <div>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                          <i class="bx bx-trash me-1"></i> Delete All Data
+                        </button>
+                        <p class="mt-2 small text-muted">Permanently delete all data from the system.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="backupModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Database Backup</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col mb-3">
+                        <p>Are you sure you want to create a backup of the database? This may take several minutes depending on the size of your data.</p>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input" type="checkbox" id="includeMedia" checked />
+                          <label class="form-check-label" for="includeMedia">Include media files (patient documents, images, etc.)</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary">Start Backup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal fade" id="resetModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Reset Settings</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col mb-3">
+                        <p>Are you sure you want to reset all settings to their default values? This action cannot be undone.</p>
+                        <div class="alert alert-warning mt-3">
+                          <strong>Warning:</strong> This will not affect patient or appointment data, but all system preferences will be reset.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-danger">Reset Settings</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Delete All Data</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col mb-3">
+                        <p class="text-danger"><strong>Danger:</strong> This will permanently delete all patient records, appointments, and system data. This action cannot be undone.</p>
+                        <div class="alert alert-danger mt-3">
+                          <h6 class="alert-heading">Before you proceed:</h6>
+                          <p>Make sure you have a recent backup of your data. All information will be permanently lost.</p>
+                        </div>
+                        <div class="mb-3">
+                          <label for="confirmText" class="form-label">Type "DELETE ALL" to confirm:</label>
+                          <input type="text" class="form-control" id="confirmText" placeholder="DELETE ALL" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-danger" id="confirmDelete" disabled>
+                      Delete All Data
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="../assets/vendor/libs/select2/select2.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      // Initialize date/time pickers and select2
+      document.addEventListener('DOMContentLoaded', function() {
+        // Time pickers
+        flatpickr('.flatpickr-time', {
+          enableTime: true,
+          noCalendar: true,
+          dateFormat: "h:i K",
+          defaultHour: 8
+        });
+        
+        // Select2 initialization
+        $('.select2').select2();
+        
+        // Confirm delete text validation
+        $('#confirmText').on('input', function() {
+          if ($(this).val() === 'DELETE ALL') {
+            $('#confirmDelete').prop('disabled', false);
+          } else {
+            $('#confirmDelete').prop('disabled', true);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

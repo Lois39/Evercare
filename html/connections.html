@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Connections | Evercare Dashboard</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-account-settings.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#007bff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="7" cy="7" r="5"></circle>
+                <circle cx="17" cy="7" r="5"></circle>
+                <circle cx="7" cy="17" r="5"></circle>
+                <circle cx="17" cy="17" r="5"></circle>
+                <line x1="12" y1="12" x2="12" y2="24"></line>
+              </svg>              
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">EverCare</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            <!-- Patients -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Patients">Patients</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="patients-list.html" class="menu-link">
+                    <div data-i18n="List">Patient List</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="add-patient.html" class="menu-link">
+                    <div data-i18n="Add">Add Patient</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Appointments -->
+            <li class="menu-item">
+              <a href="appointments.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div data-i18n="Appointments">Appointments</div>
+              </a>
+            </li>
+
+            <!-- Reports -->
+            <li class="menu-item">
+              <a href="reports.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Reports">Reports</div>
+              </a>
+            </li>
+
+            <!-- Settings -->
+            <li class="menu-item">
+              <a href="settings.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Settings">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search connections..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Dr. John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="settings.html">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4">
+                <span class="text-muted fw-light">Account Settings /</span> Connections
+              </h4>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-4">
+                    <li class="nav-item">
+                      <a class="nav-link" href="profile.html"
+                        ><i class="bx bx-user me-1"></i> Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="notifications.html"
+                        ><i class="bx bx-bell me-1"></i> Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"
+                        ><i class="bx bx-link-alt me-1"></i> Connections</a>
+                    </li>
+                  </ul>
+                  
+                  <!-- Connected Accounts -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">Connected Accounts</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <p>Connect your EverCare account to third-party services for enhanced functionality.</p>
+                      </div>
+                      
+                      <!-- Google -->
+                      <div class="d-flex mb-3 border-bottom pb-3">
+                        <div class="flex-shrink-0">
+                          <img src="../assets/img/icons/brands/google.png" alt="google" class="me-3" height="30">
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col-9 mb-sm-0 mb-2">
+                            <h6 class="mb-0">Google</h6>
+                            <small class="text-muted">Calendar and email integration</small>
+                          </div>
+                          <div class="col-3 text-end">
+                            <button class="btn btn-outline-secondary" id="googleConnect">
+                              <i class="bx bx-link-alt me-1"></i> Connect
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Microsoft -->
+                      <div class="d-flex mb-3 border-bottom pb-3">
+                        <div class="flex-shrink-0">
+                          <img src="../assets/img/icons/brands/behance.png" alt="microsoft" class="me-3" height="30">
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col-9 mb-sm-0 mb-2">
+                            <h6 class="mb-0">Behance</h6>
+                            <small class="text-muted">UI UX Platform</small>
+                          </div>
+                          <div class="col-3 text-end">
+                            <button class="btn btn-outline-secondary" id="microsoftConnect">
+                              <i class="bx bx-link-alt me-1"></i> Connect
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Slack -->
+                      <div class="d-flex mb-3 border-bottom pb-3">
+                        <div class="flex-shrink-0">
+                          <img src="../assets/img/icons/brands/slack.png" alt="slack" class="me-3" height="30">
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col-9 mb-sm-0 mb-2">
+                            <h6 class="mb-0">Slack</h6>
+                            <small class="text-muted">Team communication and alerts</small>
+                          </div>
+                          <div class="col-3 text-end">
+                            <button class="btn btn-outline-secondary" id="slackConnect">
+                              <i class="bx bx-link-alt me-1"></i> Connect
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Zoom -->
+                      <div class="d-flex mb-3 border-bottom pb-3">
+                        <div class="flex-shrink-0">
+                          <img src="../assets/img/icons/brands/twitter.png" alt="zoom" class="me-3" height="30">
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col-9 mb-sm-0 mb-2">
+                            <h6 class="mb-0">Twitter</h6>
+                            <small class="text-muted">Social media and connections</small>
+                          </div>
+                          <div class="col-3 text-end">
+                            <button class="btn btn-outline-secondary" id="zoomConnect">
+                              <i class="bx bx-link-alt me-1"></i> Connect
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- EHR Systems -->
+                      <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                          <img src="../assets/img/icons/brands/asana.png" alt="ehr" class="me-3" height="30">
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col-9 mb-sm-0 mb-2">
+                            <h6 class="mb-0">EHR System</h6>
+                            <small class="text-muted">Electronic Health Records integration</small>
+                          </div>
+                          <div class="col-3 text-end">
+                            <button class="btn btn-outline-secondary" id="ehrConnect">
+                              <i class="bx bx-link-alt me-1"></i> Connect
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- API Connections -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">API Connections</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <p>Manage your API keys and integrations with other healthcare systems.</p>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="apiKey" class="form-label">Your API Key</label>
+                        <div class="input-group input-group-merge">
+                          <input
+                            type="text"
+                            id="apiKey"
+                            class="form-control"
+                            value="sk_live_51Hq9wKJZvKY7JY7..."
+                            readonly
+                          />
+                          <button class="btn btn-outline-secondary" type="button" id="copyApiKey">
+                            <i class="bx bx-copy"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary" type="button" id="regenerateApiKey">
+                            <i class="bx bx-refresh"></i>
+                          </button>
+                        </div>
+                        <div class="form-text">Keep this key secret. Don't share it with unauthorized parties.</div>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label class="form-label">API Access</label>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="apiPatientAccess" checked />
+                          <label class="form-check-label" for="apiPatientAccess">
+                            Patient Data Access
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="apiAppointmentAccess" checked />
+                          <label class="form-check-label" for="apiAppointmentAccess">
+                            Appointment Management
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="apiBillingAccess" />
+                          <label class="form-check-label" for="apiBillingAccess">
+                            Billing Integration
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="apiWebhooks" class="form-label">Webhook URL</label>
+                        <input
+                          type="text"
+                          id="apiWebhooks"
+                          class="form-control"
+                          placeholder="https://yourdomain.com/webhook"
+                        />
+                        <div class="form-text">Enter the URL to receive real-time updates from EverCare.</div>
+                      </div>
+                      
+                      <div class="mt-2">
+                        <button type="button" class="btn btn-primary me-2">Save API Settings</button>
+                        <button type="button" class="btn btn-outline-secondary">Reset</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Connected Devices -->
+                  <div class="card">
+                    <h5 class="card-header">Connected Devices</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <p>Manage devices that have access to your EverCare account.</p>
+                      </div>
+                      
+                      <div class="table-responsive">
+                        <table class="table table-borderless">
+                          <thead>
+                            <tr>
+                              <th>Device</th>
+                              <th>Browser</th>
+                              <th>Location</th>
+                              <th>Last Active</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <i class="bx bx-desktop fs-4 me-2"></i>
+                                  <span>Office Computer</span>
+                                </div>
+                              </td>
+                              <td>Chrome, Windows</td>
+                              <td>New York, US</td>
+                              <td>Today, 10:30 AM</td>
+                              <td>
+                                <button class="btn btn-sm btn-outline-secondary">Log Out</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <i class="bx bx-laptop fs-4 me-2"></i>
+                                  <span>Personal Laptop</span>
+                                </div>
+                              </td>
+                              <td>Safari, macOS</td>
+                              <td>Boston, US</td>
+                              <td>Yesterday, 8:45 PM</td>
+                              <td>
+                                <button class="btn btn-sm btn-outline-secondary">Log Out</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <i class="bx bx-mobile-alt fs-4 me-2"></i>
+                                  <span>iPhone 13</span>
+                                </div>
+                              </td>
+                              <td>Safari, iOS</td>
+                              <td>New York, US</td>
+                              <td>Yesterday, 5:20 PM</td>
+                              <td>
+                                <button class="btn btn-sm btn-outline-secondary">Log Out</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <i class="bx bx-tablet fs-4 me-2"></i>
+                                  <span>iPad Pro</span>
+                                </div>
+                              </td>
+                              <td>Safari, iOS</td>
+                              <td>Boston, US</td>
+                              <td>2 days ago</td>
+                              <td>
+                                <button class="btn btn-sm btn-outline-secondary">Log Out</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                      <div class="mt-3">
+                        <button class="btn btn-outline-danger">
+                          <i class="bx bx-log-out-circle me-1"></i> Log Out All Other Devices
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Connection buttons functionality
+        const connectionButtons = [
+          'googleConnect',
+          'microsoftConnect',
+          'slackConnect',
+          'zoomConnect',
+          'ehrConnect'
+        ];
+        
+        connectionButtons.forEach(buttonId => {
+          const button = document.getElementById(buttonId);
+          button.addEventListener('click', function() {
+            const isConnected = button.classList.contains('btn-success');
+            
+            if (isConnected) {
+              // Disconnect
+              button.classList.remove('btn-success');
+              button.classList.add('btn-outline-secondary');
+              button.innerHTML = '<i class="bx bx-link-alt me-1"></i> Connect';
+              
+              // Show toast notification
+              const toast = new bootstrap.Toast(document.getElementById('toastNotification'));
+              document.getElementById('toastNotification').querySelector('.toast-body').textContent = 
+                `Disconnected from ${buttonId.replace('Connect', '')} successfully`;
+              toast.show();
+            } else {
+              // Connect - would normally open OAuth flow
+              button.classList.remove('btn-outline-secondary');
+              button.classList.add('btn-success');
+              button.innerHTML = '<i class="bx bx-check me-1"></i> Connected';
+              
+              // Show toast notification
+              const toast = new bootstrap.Toast(document.getElementById('toastNotification'));
+              document.getElementById('toastNotification').querySelector('.toast-body').textContent = 
+                `Connected to ${buttonId.replace('Connect', '')} successfully`;
+              toast.show();
+            }
+          });
+        });
+        
+        // API Key copy functionality
+        document.getElementById('copyApiKey').addEventListener('click', function() {
+          const apiKey = document.getElementById('apiKey');
+          apiKey.select();
+          document.execCommand('copy');
+          
+          // Show tooltip
+          const tooltip = new bootstrap.Tooltip(this, {
+            title: 'Copied!',
+            trigger: 'manual'
+          });
+          tooltip.show();
+          
+          // Hide after 1 second
+          setTimeout(() => {
+            tooltip.hide();
+          }, 1000);
+        });
+        
+        // API Key regeneration
+        document.getElementById('regenerateApiKey').addEventListener('click', function() {
+          if (confirm('Are you sure you want to regenerate your API key? Any systems using the current key will stop working.')) {
+            // Generate a random API key (in a real app, this would come from the server)
+            const newKey = 'sk_live_' + Math.random().toString(36).substring(2, 18) + 
+                          Math.random().toString(36).substring(2, 18);
+            document.getElementById('apiKey').value = newKey;
+            
+            // Show toast notification
+            const toast = new bootstrap.Toast(document.getElementById('toastNotification'));
+            document.getElementById('toastNotification').querySelector('.toast-body').textContent = 
+              'API key regenerated successfully';
+            toast.show();
+          }
+        });
+        
+        // Log out all devices
+        document.querySelector('.btn-outline-danger').addEventListener('click', function() {
+          if (confirm('Are you sure you want to log out all other devices? You will stay logged in on this device.')) {
+            // Show toast notification
+            const toast = new bootstrap.Toast(document.getElementById('toastNotification'));
+            document.getElementById('toastNotification').querySelector('.toast-body').textContent = 
+              'All other devices have been logged out';
+            toast.show();
+          }
+        });
+      });
+    </script>
+    
+    <!-- Toast Notification -->
+    <div class="bs-toast toast toast-placement-ex m-2 fade bg-success top-0 end-0" role="alert" aria-live="assertive" aria-atomic="true" id="toastNotification" data-bs-delay="2000">
+      <div class="toast-header">
+        <i class="bx bx-bell me-2"></i>
+        <div class="me-auto fw-semibold">Connections</div>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Connection status updated
+      </div>
+    </div>
+  </body>
+</html>

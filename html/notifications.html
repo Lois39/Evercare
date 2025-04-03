@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Notifications | Evercare Dashboard</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-account-settings.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#007bff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="7" cy="7" r="5"></circle>
+                <circle cx="17" cy="7" r="5"></circle>
+                <circle cx="7" cy="17" r="5"></circle>
+                <circle cx="17" cy="17" r="5"></circle>
+                <line x1="12" y1="12" x2="12" y2="24"></line>
+              </svg>              
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">EverCare</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            <!-- Patients -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Patients">Patients</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="patients-list.html" class="menu-link">
+                    <div data-i18n="List">Patient List</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="add-patient.html" class="menu-link">
+                    <div data-i18n="Add">Add Patient</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Appointments -->
+            <li class="menu-item">
+              <a href="appointments.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div data-i18n="Appointments">Appointments</div>
+              </a>
+            </li>
+
+            <!-- Reports -->
+            <li class="menu-item">
+              <a href="reports.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Reports">Reports</div>
+              </a>
+            </li>
+
+            <!-- Settings -->
+            <li class="menu-item">
+              <a href="settings.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Settings">Settings</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search notifications..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/doctor.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Dr. John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="settings.html">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4">
+                <span class="text-muted fw-light">Account Settings /</span> Notifications
+              </h4>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-4">
+                    <li class="nav-item">
+                      <a class="nav-link" href="profile.html"
+                        ><i class="bx bx-user me-1"></i> Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"
+                        ><i class="bx bx-bell me-1"></i> Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="settings-connections.html"
+                        ><i class="bx bx-link-alt me-1"></i> Connections</a>
+                    </li>
+                  </ul>
+                  
+                  <!-- Notification Settings -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">Notification Preferences</h5>
+                    <div class="card-body">
+                      <form id="notificationSettingsForm">
+                        <!-- Email Notifications -->
+                        <div class="mb-4">
+                          <h6 class="mb-3">Email Notifications</h6>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="appointmentEmail" checked />
+                            <label class="form-check-label" for="appointmentEmail">
+                              New appointment scheduled
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="cancelEmail" checked />
+                            <label class="form-check-label" for="cancelEmail">
+                              Appointment cancellation
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="reminderEmail" checked />
+                            <label class="form-check-label" for="reminderEmail">
+                              Patient appointment reminders
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="followupEmail" checked />
+                            <label class="form-check-label" for="followupEmail">
+                              Follow-up reminders
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="systemEmail" checked />
+                            <label class="form-check-label" for="systemEmail">
+                              System notifications
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <!-- SMS Notifications -->
+                        <div class="mb-4">
+                          <h6 class="mb-3">SMS Notifications</h6>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="appointmentSMS" />
+                            <label class="form-check-label" for="appointmentSMS">
+                              New appointment scheduled
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="cancelSMS" />
+                            <label class="form-check-label" for="cancelSMS">
+                              Appointment cancellation
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="reminderSMS" checked />
+                            <label class="form-check-label" for="reminderSMS">
+                              Patient appointment reminders
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="urgentSMS" checked />
+                            <label class="form-check-label" for="urgentSMS">
+                              Urgent notifications
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <!-- In-App Notifications -->
+                        <div class="mb-4">
+                          <h6 class="mb-3">In-App Notifications</h6>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="appointmentInApp" checked />
+                            <label class="form-check-label" for="appointmentInApp">
+                              New appointment scheduled
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="cancelInApp" checked />
+                            <label class="form-check-label" for="cancelInApp">
+                              Appointment cancellation
+                            </label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="messageInApp" checked />
+                            <label class="form-check-label" for="messageInApp">
+                              New messages from patients
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="systemInApp" checked />
+                            <label class="form-check-label" for="systemInApp">
+                              System notifications
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <!-- Notification Frequency -->
+                        <div class="mb-4">
+                          <h6 class="mb-3">Notification Frequency</h6>
+                          <div class="row">
+                            <div class="col-md-6 mb-3">
+                              <label for="emailFrequency" class="form-label">Email Summary</label>
+                              <select id="emailFrequency" class="form-select">
+                                <option value="instant">Instant (as they happen)</option>
+                                <option value="hourly">Hourly digest</option>
+                                <option value="daily" selected>Daily digest</option>
+                                <option value="weekly">Weekly digest</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="smsFrequency" class="form-label">SMS Alerts</label>
+                              <select id="smsFrequency" class="form-select">
+                                <option value="instant" selected>Instant (urgent only)</option>
+                                <option value="daily">Daily summary</option>
+                                <option value="disabled">Disabled</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <!-- Notification Sounds -->
+                        <div class="mb-4">
+                          <h6 class="mb-3">Notification Sounds</h6>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="enableSounds" checked />
+                            <label class="form-check-label" for="enableSounds">
+                              Enable notification sounds
+                            </label>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="soundType" class="form-label">Sound Type</label>
+                              <select id="soundType" class="form-select">
+                                <option value="default" selected>Default</option>
+                                <option value="chime">Chime</option>
+                                <option value="bell">Bell</option>
+                                <option value="alert">Alert</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">Save changes</button>
+                          <button type="reset" class="btn btn-outline-secondary">Reset to defaults</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <!-- Recent Notifications -->
+                  <div class="card">
+                    <h5 class="card-header">Recent Notifications</h5>
+                    <div class="card-body">
+                      <div class="list-group">
+                        <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start active">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">New Appointment Scheduled</h6>
+                            <small>Just now</small>
+                          </div>
+                          <p class="mb-1">John Smith has scheduled an appointment for tomorrow at 10:00 AM</p>
+                          <small>Click to view details</small>
+                        </a>
+                        <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Appointment Reminder</h6>
+                            <small class="text-muted">1 hour ago</small>
+                          </div>
+                          <p class="mb-1">Reminder: You have an appointment with Sarah Johnson today at 2:30 PM</p>
+                          <small class="text-muted">Click to view details</small>
+                        </a>
+                        <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">New Message</h6>
+                            <small class="text-muted">3 hours ago</small>
+                          </div>
+                          <p class="mb-1">Robert Brown sent you a new message regarding his prescription</p>
+                          <small class="text-muted">Click to view message</small>
+                        </a>
+                        <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">System Update</h6>
+                            <small class="text-muted">Yesterday</small>
+                          </div>
+                          <p class="mb-1">New system update available. Please update when convenient.</p>
+                          <small class="text-muted">Click for more information</small>
+                        </a>
+                        <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Appointment Cancellation</h6>
+                            <small class="text-muted">2 days ago</small>
+                          </div>
+                          <p class="mb-1">Lisa Taylor has cancelled her appointment scheduled for Friday</p>
+                          <small class="text-muted">Click to view details</small>
+                        </a>
+                      </div>
+                      <div class="text-center mt-3">
+                        <button class="btn btn-outline-primary">View All Notifications</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Form submission handler
+        const notificationForm = document.getElementById('notificationSettingsForm');
+        
+        notificationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Here you would typically make an AJAX call to save the settings
+          // For demo purposes, we'll just show a success message
+          const toast = new bootstrap.Toast(document.getElementById('toastNotification'));
+          toast.show();
+          
+          // Simulate saving to localStorage
+          const formData = {
+            emailNotifications: {
+              appointment: document.getElementById('appointmentEmail').checked,
+              cancellation: document.getElementById('cancelEmail').checked,
+              reminders: document.getElementById('reminderEmail').checked,
+              followup: document.getElementById('followupEmail').checked,
+              system: document.getElementById('systemEmail').checked,
+              frequency: document.getElementById('emailFrequency').value
+            },
+            smsNotifications: {
+              appointment: document.getElementById('appointmentSMS').checked,
+              cancellation: document.getElementById('cancelSMS').checked,
+              reminders: document.getElementById('reminderSMS').checked,
+              urgent: document.getElementById('urgentSMS').checked,
+              frequency: document.getElementById('smsFrequency').value
+            },
+            inAppNotifications: {
+              appointment: document.getElementById('appointmentInApp').checked,
+              cancellation: document.getElementById('cancelInApp').checked,
+              messages: document.getElementById('messageInApp').checked,
+              system: document.getElementById('systemInApp').checked
+            },
+            sounds: {
+              enabled: document.getElementById('enableSounds').checked,
+              type: document.getElementById('soundType').value
+            }
+          };
+          
+          localStorage.setItem('notificationSettings', JSON.stringify(formData));
+        });
+        
+        // Form reset handler
+        notificationForm.addEventListener('reset', function() {
+          // Reset to default values
+          document.getElementById('appointmentEmail').checked = true;
+          document.getElementById('cancelEmail').checked = true;
+          document.getElementById('reminderEmail').checked = true;
+          document.getElementById('followupEmail').checked = true;
+          document.getElementById('systemEmail').checked = true;
+          
+          document.getElementById('appointmentSMS').checked = false;
+          document.getElementById('cancelSMS').checked = false;
+          document.getElementById('reminderSMS').checked = true;
+          document.getElementById('urgentSMS').checked = true;
+          
+          document.getElementById('appointmentInApp').checked = true;
+          document.getElementById('cancelInApp').checked = true;
+          document.getElementById('messageInApp').checked = true;
+          document.getElementById('systemInApp').checked = true;
+          
+          document.getElementById('emailFrequency').value = 'daily';
+          document.getElementById('smsFrequency').value = 'instant';
+          
+          document.getElementById('enableSounds').checked = true;
+          document.getElementById('soundType').value = 'default';
+        });
+        
+        // Load saved settings if they exist
+        const savedSettings = localStorage.getItem('notificationSettings');
+        if (savedSettings) {
+          const settings = JSON.parse(savedSettings);
+          
+          // Email notifications
+          document.getElementById('appointmentEmail').checked = settings.emailNotifications.appointment;
+          document.getElementById('cancelEmail').checked = settings.emailNotifications.cancellation;
+          document.getElementById('reminderEmail').checked = settings.emailNotifications.reminders;
+          document.getElementById('followupEmail').checked = settings.emailNotifications.followup;
+          document.getElementById('systemEmail').checked = settings.emailNotifications.system;
+          document.getElementById('emailFrequency').value = settings.emailNotifications.frequency;
+          
+          // SMS notifications
+          document.getElementById('appointmentSMS').checked = settings.smsNotifications.appointment;
+          document.getElementById('cancelSMS').checked = settings.smsNotifications.cancellation;
+          document.getElementById('reminderSMS').checked = settings.smsNotifications.reminders;
+          document.getElementById('urgentSMS').checked = settings.smsNotifications.urgent;
+          document.getElementById('smsFrequency').value = settings.smsNotifications.frequency;
+          
+          // In-app notifications
+          document.getElementById('appointmentInApp').checked = settings.inAppNotifications.appointment;
+          document.getElementById('cancelInApp').checked = settings.inAppNotifications.cancellation;
+          document.getElementById('messageInApp').checked = settings.inAppNotifications.messages;
+          document.getElementById('systemInApp').checked = settings.inAppNotifications.system;
+          
+          // Sounds
+          document.getElementById('enableSounds').checked = settings.sounds.enabled;
+          document.getElementById('soundType').value = settings.sounds.type;
+        }
+      });
+    </script>
+    
+    <!-- Toast Notification -->
+    <div class="bs-toast toast toast-placement-ex m-2 fade bg-success top-0 end-0" role="alert" aria-live="assertive" aria-atomic="true" id="toastNotification" data-bs-delay="2000">
+      <div class="toast-header">
+        <i class="bx bx-bell me-2"></i>
+        <div class="me-auto fw-semibold">Notification Settings</div>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Your notification preferences have been saved successfully.
+      </div>
+    </div>
+  </body>
+</html>
